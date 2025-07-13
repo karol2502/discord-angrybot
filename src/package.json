@@ -1,0 +1,25 @@
+{
+  "name": "discord-angrybot",
+  "version": "1.0.0",
+  "description": "A Discord bot built with TypeScript, Bun, and Discord.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js",
+    "type-check": "bun tsc --noEmit"
+  },
+  "keywords": ["discord", "bot", "typescript", "bun"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.25",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
