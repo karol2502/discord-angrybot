@@ -20,10 +20,10 @@ eventHandler(client);
 // Bot ready event
 client.once(Events.ClientReady, async (readyClient) => {
   logger.info(`✅ Bot is ready! Logged in as ${readyClient.user.tag}`);
-  
+
   // Set bot activity/status
-  readyClient.user.setActivity('with Discord.js & Bun', { 
-    type: ActivityType.Playing 
+  readyClient.user.setActivity('with Discord.js & Bun', {
+    type: ActivityType.Playing,
   });
 
   // Initialize command handler

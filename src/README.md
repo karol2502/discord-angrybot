@@ -24,11 +24,13 @@ A modern Discord bot built with TypeScript and Bun, using Discord.js v14.
 If you haven't installed Bun yet:
 
 **Windows (PowerShell):**
+
 ```powershell
 irm bun.sh/install.ps1 | iex
 ```
 
 **macOS/Linux:**
+
 ```bash
 curl -fsSL https://bun.sh/install | bash
 ```
@@ -60,7 +62,7 @@ Edit `.env` and add your Discord credentials:
 
 ```env
 DISCORD_TOKEN=your_discord_bot_token_here
-DISCORD_CLIENT_ID=your_discord_client_id_here
+DISCORD_APPLICATION_ID=your_DISCORD_APPLICATION_ID_here
 DISCORD_GUILD_ID=your_test_guild_id_here  # Optional: for testing in a specific server
 BUN_ENV=development
 ```
@@ -68,10 +70,12 @@ BUN_ENV=development
 ### 5. Invite Bot to Server
 
 Generate an invite link with the following permissions:
+
 - `applications.commands` (for slash commands)
 - `bot` (basic bot permissions)
 
 URL format:
+
 ```
 https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=2147483648&scope=bot%20applications.commands
 ```
@@ -160,13 +164,14 @@ export async function execute(interaction: ChatInputCommandInteraction) {
 The bot uses Bun's built-in environment variables for configuration:
 
 - `DISCORD_TOKEN` - Your bot's token (required)
-- `DISCORD_CLIENT_ID` - Your application's client ID (required)
+- `DISCORD_APPLICATION_ID` - Your application's client ID (required)
 - `DISCORD_GUILD_ID` - Guild ID for testing commands (optional)
 - `BUN_ENV` - Environment mode (development/production)
 
 ## Logging
 
 The bot includes a built-in logger that provides:
+
 - Timestamped log messages
 - Different log levels (info, warn, error, debug)
 - Development-only debug messages

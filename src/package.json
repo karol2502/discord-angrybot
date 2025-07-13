@@ -9,8 +9,13 @@
     "start": "bun run dist/index.js",
     "type-check": "bun tsc --noEmit"
   },
-  "keywords": ["discord", "bot", "typescript", "bun"],
-  "author": "",
+  "keywords": [
+    "discord",
+    "bot",
+    "typescript",
+    "bun"
+  ],
+  "author": "karol2502",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1"

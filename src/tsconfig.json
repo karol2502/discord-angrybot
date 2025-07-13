@@ -5,7 +5,7 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "allowJs": true,
+    "allowJs": false,
     "checkJs": false,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +14,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "./",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
@@ -22,6 +22,6 @@
     "lib": ["ES2022"],
     "types": ["bun-types"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["**/*"],
+  "exclude": ["../node_modules", "../dist"]
 }
